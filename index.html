@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="Taekwon-Do grading theory cards">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>🥋 Taekwon-Do Theory Cards</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#111827;--muted:#64748b;--line:#e5e7eb;--accent:#111827;--shadow:0 12px 35px rgba(15,23,42,.08)}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#eef2f7 0,#f8fafc 40%,#f4f6f8 100%);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)}
+button,input{font:inherit}.wrap{max-width:980px;margin:auto;padding:20px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0 22px}
+.brand{font-weight:850;font-size:20px;letter-spacing:-.4px}.brand span{display:inline-block;margin-right:8px}
+.small-btn{border:1px solid var(--line);background:#fff;border-radius:12px;padding:9px 12px;cursor:pointer}
+.hero{background:#111827;color:white;border-radius:28px;padding:30px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero:after{content:"🥋";position:absolute;font-size:110px;right:20px;bottom:-28px;opacity:.12}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1;margin:0 0 12px;letter-spacing:-2px}.hero p{margin:0;color:#cbd5e1;max-width:600px;font-size:16px}
+.search{margin-top:22px;background:white;border:1px solid var(--line);border-radius:16px;padding:13px 15px;width:100%;outline:none}.search:focus{box-shadow:0 0 0 3px #cbd5e1}
+.section-title{margin:30px 0 12px;font-size:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:14px}
+.grade{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:17px;text-align:left;cursor:pointer;min-height:145px;box-shadow:0 4px 14px rgba(15,23,42,.04);transition:.15s}.grade:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.belt{height:9px;border-radius:9px;margin-bottom:15px;background:#111827;border:1px solid #d1d5db}.white{background:#fff}.yellow,.yellow-tag{background:#facc15}.green,.green-tag{background:#22c55e}.blue,.blue-tag{background:#2563eb}.red,.red-tag{background:#dc2626}.black{background:#111827}
+.grade .kup{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.7px}.grade h3{margin:5px 0 8px;font-size:19px}.grade p{margin:0;color:var(--muted);font-size:13px}
+.hidden{display:none!important}.back{margin:5px 0 18px}.detail{background:white;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.detail-top{padding:26px;background:#111827;color:white}.detail-top h1{margin:4px 0 3px;font-size:34px;letter-spacing:-1px}.detail-top .meta{color:#cbd5e1}.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.fact{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);padding:8px 11px;border-radius:12px;font-size:13px}
+.tabs{display:flex;gap:7px;padding:12px;border-bottom:1px solid var(--line);overflow:auto}.tab{border:0;background:#f1f5f9;padding:10px 14px;border-radius:11px;cursor:pointer;white-space:nowrap;font-weight:700}.tab.active{background:#111827;color:white}
+.content{padding:24px}.content h2{margin:0 0 10px;font-size:22px}.content p{color:#475569}.list{display:grid;gap:10px;margin-top:16px}.item{border:1px solid var(--line);border-radius:15px;padding:14px 15px;background:#fafafa;line-height:1.5}.item:before{content:"•";font-weight:900;margin-right:10px}
+.notice{margin-top:22px;padding:14px 15px;border-radius:15px;background:#f8fafc;border:1px solid var(--line);font-size:13px;color:#475569}
+footer{text-align:center;color:#94a3b8;font-size:12px;padding:30px 0}
+@media(max-width:600px){.wrap{padding:13px}.hero{padding:23px;border-radius:22px}.hero h1{font-size:34px}.grid{grid-template-columns:1fr 1fr;gap:10px}.grade{min-height:132px;padding:14px;border-radius:16px}.grade h3{font-size:16px}.detail-top h1{font-size:29px}.content{padding:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="brand"><span>🥋</span>Taekwon-Do Theory Cards</div><button class="small-btn" id="homeBtn">Grades</button></header>
+
+<main id="home">
+<section class="hero">
+<h1>Know your theory.</h1>
+<p>Choose your grading level to review patterns, techniques and theory from your grading cards.</p>
+<input class="search" id="search" type="search" placeholder="Search grades, patterns or topics…">
+</section>
+<h2 class="section-title">Choose your grade</h2>
+<div class="grid" id="gradeGrid"></div>
+</main>
+
+<main id="detail" class="hidden">
+<button class="small-btn back" id="backBtn">← Back to grades</button>
+<section class="detail">
+<div class="detail-top">
+<div class="meta" id="kup"></div><h1 id="gradeName"></h1><div class="meta" id="pattern"></div>
+<div class="facts" id="facts"></div>
+</div>
+<nav class="tabs" id="tabs">
+<button class="tab active" data-tab="overview">Pattern</button>
+<button class="tab" data-tab="techniques">Techniques</button>
+<button class="tab" data-tab="theory">Theory</button>
+</nav>
+<section class="content" id="content"></section>
+</section>
+</main>
+<footer>Offline-ready • No login • No student data stored</footer>
+</div>
+<script src="data.js"></script>
+<script>
+const grid=document.querySelector('#gradeGrid'), home=document.querySelector('#home'), detail=document.querySelector('#detail');
+let current=null, currentTab='overview';
+function renderGrades(filter=''){
+ const q=filter.trim().toLowerCase();
+ const list=GRADES.filter(g=>(g.name+' '+g.kup+' '+g.pattern+' '+g.techniques.join(' ')+' '+g.theory.join(' ')).toLowerCase().includes(q));
+ grid.innerHTML=list.map(g=>`<button class="grade" data-id="${g.id}"><div class="belt ${g.accent}"></div><div class="kup">${g.kup}</div><h3>${g.name}</h3><p>${g.pattern}${g.movements?' • '+g.movements+' movements':''}</p></button>`).join('')||'<div class="notice">No grades matched your search.</div>';
+ grid.querySelectorAll('.grade').forEach(b=>b.onclick=()=>openGrade(b.dataset.id));
+}
+function openGrade(id,tab='overview'){
+ current=GRADES.find(g=>g.id===id); if(!current)return;
+ home.classList.add('hidden');detail.classList.remove('hidden');
+ document.querySelector('#kup').textContent=current.kup;
+ document.querySelector('#gradeName').textContent=current.name;
+ document.querySelector('#pattern').textContent=current.pattern;
+ document.querySelector('#facts').innerHTML=`<div class="fact">Pattern: ${current.pattern}</div>${current.movements?`<div class="fact">${current.movements} movements</div>`:'<div class="fact">Pattern exercise</div>'}`;
+ currentTab=tab;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===tab));renderContent();
+ history.replaceState(null,'','#'+id);
+}
+function renderContent(){
+ const c=document.querySelector('#content');
+ if(currentTab==='overview') c.innerHTML=`<h2>${current.pattern}</h2><p>${current.overview}</p><div class="notice">Use the tabs above to review the techniques and theory for this grading level.</div>`;
+ if(currentTab==='techniques') c.innerHTML=`<h2>Techniques</h2><div class="list">${current.techniques.map(x=>`<div class="item">${x}</div>`).join('')}</div>`;
+ if(currentTab==='theory') c.innerHTML=`<h2>Theory</h2><div class="list">${current.theory.map(x=>`<div class="item">${x}</div>`).join('')}</div>`;
+}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{currentTab=b.dataset.tab;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));renderContent()});
+document.querySelector('#search').oninput=e=>renderGrades(e.target.value);
+function goHome(){detail.classList.add('hidden');home.classList.remove('hidden');history.replaceState(null,'','#');document.querySelector('#search').focus()}
+document.querySelector('#backBtn').onclick=goHome;document.querySelector('#homeBtn').onclick=goHome;
+renderGrades();
+const hash=location.hash.slice(1);if(hash)openGrade(hash);
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js'))}</script></body></html>
