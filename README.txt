@@ -1,13 +1,11 @@
-TAEKWON-DO THEORY CARDS — V3
+TAEKWON-DO THEORY CARDS — FINAL
 
-Files:
-- index.html — app
-- data.js — grading-card content
-- manifest.webmanifest — installable PWA settings
-- service-worker.js — offline caching
-- icon.svg — app icon
+This is a static PWA. Upload ALL files to the ROOT of a GitHub Pages repository:
+index.html
+data.js
+manifest.webmanifest
+service-worker.js
+icon.svg
+README.txt
 
-Free hosting:
-GitHub Pages or Cloudflare Pages can host these static files. Upload/publish the contents of this folder; no server or database is required.
-
-The app has no login, accounts, student records or instructor functions.
+The app contains the grading-card material supplied by the user, organised by grade. No login, student records, database or server is required.

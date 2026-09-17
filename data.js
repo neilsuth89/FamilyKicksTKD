@@ -1,22 +1,45 @@
-const GRADES = [
+const GRADES=[
   {
     "id": "10th-kup",
     "name": "White Belt",
     "kup": "10th Kup",
     "accent": "white",
-    "pattern": "Saju Jirugi",
+    "pattern": "Saju Jirugi (Four Direction Punch)",
     "movements": null,
-    "overview": "White Belt grading theory and terminology.",
-    "techniques": [
-      "Saju Jirugi",
-      "Walking stance (Gunnun Sogi)",
-      "Low section outer forearm block (Najunde Bakat Palmok Makgi)",
-      "Middle section straight punch (Kaunde Ap Jirugi)"
-    ],
     "theory": [
-      "Taekwon-Do means the art or way of the foot and hand.",
-      "Saju Jirugi is a four-direction punching exercise.",
-      "Stance: Sogi means stance or position; Gunnun Sogi is walking stance."
+      "White signifies - Innocence, beginner, no previous knowledge of Taekwon-Do."
+    ],
+    "techniques": [
+      "Punch — Jirugi",
+      "Fore Fist — Ap Joomuk",
+      "Front Rising Kick — Ap Cha Olligi",
+      "Outer Forearm Block — Bakat Palmok Makgi",
+      "Four Direction Punch — Saju Jirugi",
+      "Spot Turning — Gujari Dolgi",
+      "Obverse — Baro",
+      "Reverse — Bandae",
+      "Low Section — Najunde",
+      "Middle Section — Kaunde",
+      "High Section — Nopunde",
+      "Attention Stance — Charyot Sogi",
+      "Parallel Ready Stance — Narani Junbi Sogi",
+      "Sitting Stance — Annun Sogi",
+      "Walking Stance — Gunnun Sogi",
+      "L Stance — Niunja Sogi",
+      "Taekwon-Do — Is the Korean art of Self Defense",
+      "T.A.G.B — Taekwon-Do Association of Great Britain",
+      "Tae — To jump, kick or smash with the foot",
+      "Kwon — A fist to punch or destroy with the hand",
+      "Do — Art, Way or Method",
+      "Uniform — Dobok",
+      "Belt — Ti",
+      "Training Hall — Dojang",
+      "Tenets — Courtesy, Integrity, Perseverance, Self Control and Indomitable Spirit",
+      "Attention Stance — Heels touching, feet 45°, Weight 50/50",
+      "Parallel Ready Stance — Shoulder Width from little toes, Weight 50/50",
+      "Sitting Stance — One and a half shoulder width from big toes, Weight 50/50",
+      "Walking Stance — One shoulder width, one and a half shoulder widths from big toes, Weight 50/50",
+      "L Stance — One shoulder width, one and a half shoulder widths long in total, Weight 70/30"
     ]
   },
   {
@@ -26,17 +49,26 @@ const GRADES = [
     "accent": "yellow-tag",
     "pattern": "Chon-Ji Tul",
     "movements": 19,
-    "overview": "Chon-Ji Tul consists of 19 movements.",
-    "techniques": [
-      "Chon-Ji Tul",
-      "Low section outer forearm block",
-      "Middle section straight punch",
-      "Walking stance"
-    ],
     "theory": [
-      "Chon-Ji means literally 'Heaven and Earth'.",
-      "A pattern is a series of fundamental movements representing attack and defence against imaginary opponents.",
-      "Breathing should be controlled and coordinated with movement."
+      "Chon Ji means literally Heaven and Earth. It is interpreted in the Orient as the creation of the world or the beginning of human history; therefore it is the initial pattern played by the beginner. The pattern consists of two parts, one representing Heaven and one representing Earth.",
+      "Chon Ji has two stances — Gunnun Sogi & Niunja Sogi.",
+      "Chon Ji has two blocks — Bakat Palmok Najunde Makgi & An Palmok Kaunde Makgi.",
+      "A pattern consists of a combination of full power Taekwon-Do techniques performed in a logical order against one or more imaginary opponents, designed to practice and perfect techniques some of which might not otherwise be used.",
+      "The name of the pattern, the number of movements or the diagrammatic symbol of each pattern symbolises either heroic figures in Korean history or instances relating to historical events.",
+      "Pattern meanings also demonstrate the use of one or more of the tenets to give us inspiration to follow.",
+      "Saju Jirugi is not a pattern because it does not have a meaning, therefore it is an exercise.",
+      "Techniques are performed in different types of motion, most are governed by your breathing.",
+      "Normal motion requires a breath in followed by a breath out at the end of the technique, with a slight pause before the next technique."
+    ],
+    "techniques": [
+      "Double Punch — Do Jirugi",
+      "Front Snap Kick — Ap Cha Busigi",
+      "Walking Ready Stance — Gunnun Junbi Sogi",
+      "Inner Forearm Middle Block — An Palmok Kaunde Makgi",
+      "Knife Hand Side Strike — Sonkal Yop Taerigi",
+      "Rising Block — Chookyo Makgi",
+      "Step Turning — Omgyo Didimyo Dolgi",
+      "Pattern — Tul"
     ]
   },
   {
@@ -46,16 +78,29 @@ const GRADES = [
     "accent": "yellow",
     "pattern": "Dan Gun Tul",
     "movements": 21,
-    "overview": "Dan Gun Tul consists of 21 movements.",
-    "techniques": [
-      "Dan Gun Tul",
-      "Three-step sparring",
-      "Front snap kick",
-      "Knifehand strike"
-    ],
     "theory": [
-      "Dan Gun is named after the holy Dan Gun, the legendary founder of Korea in 2333 BC.",
-      "Yellow signifies the earth from which a plant sprouts and takes root."
+      "Dan Gun is named after the holy Dan-Gun, the legendary founder of Korea in the year 2333 B.C.",
+      "Yellow signifies — Earth from which the plant sprouts and takes root, as Taekwon-Do foundation is being laid.",
+      "Practice 3 Step Sparring to develop — Focus, Distance and Timing.",
+      "Continuous motion is used when combining several hand techniques without pausing. With one breath in and out per technique.",
+      "Taekwon-Do inaugurated 11th April 1955.",
+      "Taekwon-Do introduced into the UK in 1967.",
+      "T.A.G.B. formed — 1983.",
+      "The T.A.G.B. is the largest and most successful Taekwon-Do organisation in Britain.",
+      "B.T.C. — British Taekwon-Do Council formed in 1988.",
+      "The T.A.G.B helped found the B.T.C., this being the only governing body of Taekwon-Do to be recognised by the sports council.",
+      "T.I. — Taekwon-Do International formed in 1993.",
+      "The T.A.G.B also helped found T.I. The aims are to unite Taekwon-Do practitioners worldwide; this is a non-political organisation and is now one of the largest world Taekwon-Do bodies."
+    ],
+    "techniques": [
+      "Knife Hand Guarding Block — Sonkal Daebi Makgi",
+      "High Punch — Nopunde Jirugi",
+      "Twin Forearm Block — Sang Palmok Makgi",
+      "Outer Forearm Inward Block — Bakat Palmok Anuro Makgi",
+      "Turning Kick — Dollyo Chagi",
+      "Forearm Guarding Block — Palmok Daebi Makgi",
+      "Three Step Sparring — Sambo Matsoki",
+      "Back Fist Downward Strike — Dung Joomuk Naeryo Taerigi"
     ]
   },
   {
@@ -65,16 +110,25 @@ const GRADES = [
     "accent": "green-tag",
     "pattern": "Do-San Tul",
     "movements": 24,
-    "overview": "Do-San Tul consists of 24 movements.",
-    "techniques": [
-      "Do-San Tul",
-      "Consecutive motion",
-      "Fast motion",
-      "Obverse and reverse motion"
-    ],
     "theory": [
-      "Do-San is the pseudonym of the patriot Ahn Chang-Ho.",
-      "Consecutive motion links techniques without a pause; fast motion is performed with increased speed."
+      "Do-San is the pseudonym of the patriot Ahn Chang-Ho (1876-1938) who devoted his entire life to furthering the education of Korea and its independent movement.",
+      "Consecutive Kick — when combining several foot techniques without lowering the kicking leg.",
+      "Fast Motion — used when combining several techniques; the one breath in is exhaled proportionately between techniques.",
+      "In a right stance a right technique is obverse and the left technique is reverse.",
+      "Stances with a 50/50 weight ratio — The forward leg denotes the stance, e.g. Walking, Low, Fixed. If the right leg is forward in walking stance then this is a Right Walking Stance. If neither leg is in front, e.g. Attention, Parallel, Sitting, then the stance is neither left nor right and the technique is neither Obverse nor Reverse.",
+      "Stances with unequal weight ratio — The most load-bearing leg denotes the stance, e.g. L, Bending, Vertical. In L Stance if 70% of the weight is on the right leg then this is a right L Stance."
+    ],
+    "techniques": [
+      "Outer Forearm High Block — Bakat Palmok Nopunde Makgi",
+      "Straight Fingertip Thrust — Sun Sonkut Tulgi",
+      "Release From A Grab — Jappyosul Tae",
+      "Back Fist High Side Strike — Dung Joomuk Nopunde Yop Taerigi",
+      "Outer Forearm High Wedging Block — Bakat Palmok Nopunde Hechyo Makgi",
+      "Sitting Stance Knife Hand Side Strike — Annun So Sonkal Yop Taerigi",
+      "Side Piercing Kick — Yop Cha Jirugi",
+      "Knife Hand Block — Sonkal Makgi",
+      "Knife Hand Inward High Strike — Sonkal Anuro Nopunde Taerigi",
+      "Consecutive Kick — Yonsok Chagi"
     ]
   },
   {
@@ -84,16 +138,25 @@ const GRADES = [
     "accent": "green",
     "pattern": "Won-Hyo Tul",
     "movements": 28,
-    "overview": "Won-Hyo Tul consists of 28 movements.",
-    "techniques": [
-      "Won-Hyo Tul",
-      "Side kick",
-      "Turning kick",
-      "Korean counting"
-    ],
     "theory": [
-      "Green signifies the plant's growth as Taekwon-Do skill develops.",
-      "Won-Hyo was the noted monk who introduced Buddhism to the Silla Dynasty in 686 AD."
+      "Won-Hyo was the noted monk who introduced Buddhism into the Silla dynasty in 686 A.D.",
+      "Green signifies — The plants growth as Taekwon-Do skills begin to develop.",
+      "Grade indicated by belt: 10th Kup White; 9th Kup Yellow Stripe; 8th Kup Yellow; 7th Kup Green Stripe; 6th Kup Green; 5th Kup Blue Stripe; 4th Kup Blue; 3rd Kup Red Stripe; 2nd Kup Red; 1st Dan Black.",
+      "Counting in Korean — As in English, the word for the double figure is placed in front of the single figure word, e.g. Twenty One — Sumul Hana; Twenty Two — Sumul Dool; Twenty Three — Sumul Set. Unlike our own decimal system, Korean counting is based on the number 9.",
+      "Counting in Korean: 1 Hanna; 2 Dool; 3 Set; 4 Net; 5 Tasut; 6 Yosot; 7 Ilgup; 8 Yudul; 9 Ahop; 10 Yul."
+    ],
+    "techniques": [
+      "Close Ready Stance “A” — Moa Junbi Sogi “A”",
+      "Foot Shifting — Jajun Bal",
+      "Fixed Stance — Gojong Sogi",
+      "Bending Ready Stance “A” — Guburyo Junbi Sogi “A”",
+      "Inner Forearm Circular Block — An Palmok Dollimyo Makgi",
+      "Palm Inward Block — Sonbadak Anuro Makgi",
+      "Vertical Stance — Soo Jik Sogi",
+      "Reverse Side Piercing Kick — Bandae Yop Cha Jirugi",
+      "Reverse Knife Hand High Reverse Strike — Sonkal Dung Nopunde Bandae Taerigi",
+      "Semi Free Sparring — Ban Jayoo Matsoki",
+      "Waist Block — Hori Makgi"
     ]
   },
   {
@@ -103,16 +166,30 @@ const GRADES = [
     "accent": "blue-tag",
     "pattern": "Yul-Gok Tul",
     "movements": 38,
-    "overview": "Yul-Gok Tul consists of 38 movements.",
-    "techniques": [
-      "Yul-Gok Tul",
-      "Two-step sparring",
-      "Free sparring",
-      "Connection motion"
-    ],
     "theory": [
-      "Yul-Gok is the pseudonym of the great philosopher and scholar Yi I, nicknamed the 'Confucius of Korea'.",
-      "Blue signifies the sky and heaven, towards which the plant matures into a tree."
+      "Yul Gok is the pseudonym of a great philosopher and scholar Yi I (1536-1584 A.D.) nicknamed the Confucius of Korea. The 38 movements of the pattern refer to his birthplace on 38 degrees latitude and the diagram represents scholar.",
+      "Two Step Sparring — Perfects focus, distance and timing against co-ordinated hand and foot attacks.",
+      "Free Sparring — The aim in free sparring is to score points. You are using Taekwon-Do as a sport. The scoring system awards 1 point for a hand technique to middle or high section, 2 points for a middle kick and 3 points for a high kick. The objective is only to touch your partner without causing any pain or injury. NO techniques are allowed below the belt.",
+      "Connection Motion — used when a no tension on impact technique is connected to a tension on impact technique. Hooking blocks are no tension on impact techniques, executed by inhaling through the whole of the block and then exhaling before moving on. In pattern Yul-Gok a hooking block is connected to an obverse punch; this is executed by inhaling on the block and exhaling on the punch."
+    ],
+    "techniques": [
+      "Palm High Hooking Block — Sonbadak Nopunde Golcho Makgi",
+      "Reverse Palm High Hooking Block — Sonbadak Nopunde Bandae Golcho Makgi",
+      "Front Elbow Strike — Ap Palkup Taerigi",
+      "Twin Knife Hand Block — Sang Sonkal Makgi",
+      "Jumping — Twigi",
+      "Double Forearm High Block — Doo Palmok Nopunde Makgi",
+      "X Stance — Kyocha Sogi",
+      "Two Step Sparring — Ibo Matsoki",
+      "X Fist Pressing Block — Kyocha Joomuk Noolo Makgi",
+      "Side Punch — Yop Jirugi",
+      "Twin Vertical Punch — Sang Sewo Jirugi",
+      "Palm Upward Block — Sonbadak Ollyo Makgi",
+      "Side Elbow Thrust — Yop Palkup Tulgi",
+      "Knee Kick — Moorup Chagi",
+      "Flat Fingertip Thrust — Opun Sonkut Tulgi",
+      "Twin Upset Punch — Sang Dwijibo Jirugi",
+      "Free Sparring — Jayoo Matsoki"
     ]
   },
   {
@@ -122,16 +199,31 @@ const GRADES = [
     "accent": "blue",
     "pattern": "Joong-Gun Tul",
     "movements": 32,
-    "overview": "Joong-Gun Tul consists of 32 movements.",
-    "techniques": [
-      "Joong-Gun Tul",
-      "Rear foot stance",
-      "Low stance",
-      "Slow motion"
-    ],
     "theory": [
-      "Joong-Gun is named after the patriot Ahn Joong-Gun who assassinated Hiro-Bumi Ito, the first Japanese governor-general of Korea.",
-      "Slow motion requires controlled execution while maintaining technique and balance."
+      "Joong-Gun is named after the patriot An Joong Gun who assassinated Hiro-Bumi Ito, the first Japanese Governor General of Korea. Known as the man who played the leading part of the Korea-Japan merger. There are 32 movements in the pattern that represent Mr Ahn’s age when he was executed at Lui-Shung prison in 1910.",
+      "Rear Foot Stance — one shoulder width in length total, front ball of foot slightly touching the floor, body weight on the back foot.",
+      "Low Stance — as walking stance but longer by one half foot.",
+      "Blue signifies — the heavens towards which the plant matures into a towering tree as training in Taekwon-Do progresses.",
+      "Slow Motion — used solely in patterns to demonstrate the theory of power. The element of speed being the only element omitted."
+    ],
+    "techniques": [
+      "Close Ready Stance “B” — Moa Junbi Sogi “B”",
+      "Rear Foot Stance — Dwit Bal Sogi",
+      "Reverse Knife Hand Block — Sonkal Dung Makgi",
+      "Upper Elbow Strike — Wi Palkup Taerigi",
+      "X Fist Rising Block — Kyocha Joomuk Chookyo Makgi",
+      "Low Stance — Nachuo Sogi",
+      "Palm Pressing Block — Sonbadak Noollo Makgi",
+      "Angle Punch — Giokja Jirugi",
+      "U-Shape Block — Digutja Jirugi",
+      "Open Fist High Punch — Pyon Joomuk Nopunde Jirugi",
+      "Arc Hand High Strike — Bandal Son Nopunde Taerigi",
+      "Twin Straight Forearm Checking Block — Sang Sun Palmok Momchau Makgi",
+      "Side Fist Side Strike — Yop Joomuk Yop Taerigi",
+      "Palm Waist Block — Sonbadak Hori Makgi",
+      "Reverse Turning Kick — Bandae Dollyo Chagi",
+      "Double Stepping — Ibo Omgyo Didigi",
+      "Inner Forearm Inward Waist Block — An Palmok Anuro Hori Makgi"
     ]
   },
   {
@@ -139,19 +231,32 @@ const GRADES = [
     "name": "Red Tag",
     "kup": "3rd Kup",
     "accent": "red-tag",
-    "pattern": "Toi-Gye Tul",
+    "pattern": "Toi-Gye",
     "movements": 37,
-    "overview": "Toi-Gye Tul consists of 37 movements.",
-    "techniques": [
-      "Toi-Gye Tul",
-      "One-step sparring",
-      "Focus shield",
-      "Stamping motion",
-      "Foot techniques"
-    ],
     "theory": [
-      "Toi-Gye is the pen name of the noted scholar Yi Hwang.",
-      "Red signifies danger, cautioning the student to exercise control and warning the opponent to stay away."
+      "Toi-Gye is the penname of the noted scholar Yi Hwang (16th A.D.), an authority on Neo-Confucianism. The 37 movements of the pattern refer to his birthplace on 37 degrees latitude and the diagram represents scholar.",
+      "One Step Sparring — perfects efficient defence and accurate decisive counter attacks.",
+      "Student Focus Shield — helps develop good free sparring skills.",
+      "Stamping Motion — used in both attacking and blocking, increasing the power and effectiveness of either the attack or block.",
+      "Punches and Strikes — can be used against hard or soft targets; the aim is to smash, pierce or penetrate. This is achieved by focusing the breathing and the other elements of power to the end of the technique. Both techniques accelerate in a relaxed manner throughout their execution resulting in a dynamic twist with tension.",
+      "Thrusts — are only used against soft targets. This technique reaches the target under tension and at a constant speed after its initial acceleration, exhaling throughout. This means they are effective anywhere on that line.",
+      "Foot Techniques are divided into attacking and defending kicks."
+    ],
+    "techniques": [
+      "Upset Fingertip Thrust — Dwijibun Sonkut Tulgi",
+      "Side Back Strike — Yopdwi Taerigi",
+      "Twin Elbow Side Thrust — Sang Palkup Yop Tulgi",
+      "W-Shape Block — San Makgi",
+      "Double Forearm Pushing Block — Doo Palmok Miro Makgi",
+      "One Step Sparring — Ilbo Matsoki",
+      "Student Focus Shield — Jeja Chotjum Bangpae",
+      "Front Snap Kick — Apcha Busigi",
+      "Stamping Kick — Cha Bapgi",
+      "Ball of the foot — Apkumchi",
+      "Instep — Baldung",
+      "Knee — Moorup",
+      "Toes — Balkut",
+      "Back sole — Dwitkumchi"
     ]
   },
   {
@@ -161,17 +266,33 @@ const GRADES = [
     "accent": "red",
     "pattern": "Hwa-Rang Tul",
     "movements": 29,
-    "overview": "Hwa-Rang Tul consists of 29 movements.",
-    "techniques": [
-      "Hwa-Rang Tul",
-      "Turning kick",
-      "Back kick",
-      "Hooking kick",
-      "Attacking tools"
-    ],
     "theory": [
-      "Hwa-Rang is named after the Hwa-Rang youth group which originated in the Silla Dynasty.",
-      "Red represents danger, encouraging control and caution."
+      "Hwa-Rang is named after the Hwa-Rang youth group which originated in the Silla Dynasty around 600 A.D. This group eventually became the actual driving force for the unification of the three kingdoms of Korea. The 29 movements refer to the 29th infantry division, where Taekwondo developed into maturity.",
+      "Red signifies — Danger, cautioning the student to exercise control and warning the opponent to stay away.",
+      "TAGB Officers listed on the card: Chairman Mr David Oliver 7th Dan; Vice Chairman Mr Michael Dew 7th Dan; Treasurer Mr Ron Sergiew 7th Dan; National Secretary Mr Don Atkins 7th Dan; National Coach Mr Kenny Walton 7th Dan; Liaison Officer Mr Paul Donnelly 7th Dan.",
+      "Attacking Tool: Foot Sword — Balkal; Back Heel — Dwitchook; Reverse Foot Sword — Balkal Dung; Ball of the foot — Apkumchi; Instep — Baldung; Knee — Moorup; Toes — Balkut; Back sole — Dwitkumchi."
+    ],
+    "techniques": [
+      "Close Ready Stance “C” — Moa Junbi Sogi “C”",
+      "Palm Pushing Block — Sonbadak Miro Makgi",
+      "Upward Punch — Ollyo Jirugi",
+      "Sliding — Mikulgi",
+      "Knife Hand Downward Strike — Sonkal Naeryo Taerigi",
+      "Inner Forearm Side Front Block — An Palmok Yopap Makgi",
+      "Side Piercing Kick — Yop Cha Jirugi",
+      "Reverse Side Piercing Kick — Bandae Yop Cha Jirugi",
+      "Side Thrusting Kick — Yop Cha Tulgi",
+      "Side Pushing Kick — Yop Cha Milgi",
+      "Back Kick — Dwit Chagi",
+      "Turning Kick — Dollyo Chagi",
+      "Reverse Turning Kick — Bandae Dollyo Chagi",
+      "Reverse Hooking Kick — Bandae Dollyo Goro Chagi",
+      "Downward Kick — Naeryo Chagi",
+      "Twisting Kick — Bituro Chagi",
+      "Vertical Kick — Sewo Chagi",
+      "Pressing Kick — Noollo Chagi",
+      "Inward Kick — Anuro Chagi",
+      "Outward Kick — Bakuro Chagi"
     ]
   },
   {
@@ -181,20 +302,42 @@ const GRADES = [
     "accent": "black",
     "pattern": "Choong-Moo Tul",
     "movements": 30,
-    "overview": "Black Tag grading includes Choong-Moo Tul and extended terminology/theory.",
-    "techniques": [
-      "Choong-Moo Tul",
-      "Flying and jumping techniques",
-      "Turns",
-      "Defensive foot techniques",
-      "Blocking tools",
-      "Hand techniques for attack",
-      "Thrust terminology"
-    ],
     "theory": [
-      "Choong-Moo is the name given to the great admiral Yi Soon-Sin.",
-      "Black signifies maturity and proficiency in Taekwon-Do.",
-      "Theory of Power: reaction force, concentration, equilibrium, breath control, mass and speed."
+      "Choong-Moo was the given name to the great Admiral Yi Sun-Sin of the Yi Dynasty. He was reputed to have invented the first armoured battleship (Kobukson), the precursor of the present day submarine, in 1592 A.D. The reason why this pattern ends with a left hand attack is to symbolise his regrettable death having no chance to show his unrestrained potentiality, checked by the forced reservation of his loyalty to the king.",
+      "Flying and Jumping Techniques — Flying techniques are executed in the air, whilst jumping techniques are executed upon the impact of landing.",
+      "Step Turning — allows any change in direction from 0 to 360 degrees. Can be executed with either foot moving forward, backward, clockwise or anti-clockwise and can be combined with double stepping, shifting and/or sliding.",
+      "Spot Turning — only turn 180 degrees to face an opponent behind. Both feet move to complete the turn. Generally the front foot moves first, but on occasion the back foot can be moved first. The turn is executed after moving one foot onto the centreline of the stance and can be clockwise or anti-clockwise depending which leg is forward. On completion the front leg will be the opposite one to before the turn.",
+      "Pivot Turn — mostly used in walking, sitting or diagonal stance and executed when pivoting on both feet at the same time. (E.G. Toi-Gye number 35 & 36)",
+      "Foot Techniques used for defence: Front Rising Kick — Ap Cha Olligi; Side Rising Kick — Yop Cha Olligi; Crescent Kick — Bandal Chagi; Waving Kick — Doro Chagi; Hooking Kick — Golcho Chagi; Front Checking Kick — Ap Cha Momchugi; Side Checking Kick — Yop Cha Momchugi; Sweeping Kick — Suroh Chagi.",
+      "Blocking Tool: Ball of the foot — Apkumchi; Foot Sword — Balkal; Side Sole — Yop Bal Badak; Side Instep — Yop Baldung; Sole — Bal Badak; Back Heel — Dwitchook.",
+      "Black signifies — Opposite to White, therefore signifying the maturity and proficiency in Taekwon-do. Also indicates the wearer’s imperviousness to darkness and fear.",
+      "Hand Techniques used for attack — Punch: Jirugi, Front: Ap, Side: Yop, Turning: Dollyo, Fore Fist: Ap Joomuk, Angle: Giokja, Upset: Dwijbo, Knuckle Fist: Songarak Joomuk, Downward: Naeryo, Crescent: Bandal, Vertical: Sewo, U Shape: Digutja, Horizontal: Soopyong, Open Fist: Pyon Joomuk.",
+      "Strikes: Taerigi, Front Strike: Ap Taerigi, Knife Hand: Sonkal, Back Fist: Dung Joomuk, Elbow: Palkup, Reverse Knife Hand: Sonkal Dung, Under Fist: Mit Joomuk, Arc Hand: Bandalson, Side Strike: Yop Taerigi, Side Fist: Yop Joomuk, Back Hand: Sondung.",
+      "Outward Strikes: Bakuro Taerigi — Knife Hand Sonkal; Under Fist Mit Joomuk; Side Fist Yop Joomuk.",
+      "Inward Strikes: Anuro Taerigi — Knife Hand Sonkal; Under Fist Mit Joomuk; Reverse Knife Hand Sonkal Dung.",
+      "Downward Strikes: Naeryo Taerigi — Knife Hand Sonkal; Back Fist Dung Joomuk; Side Fist Yop Joomuk; Back Hand Sondung.",
+      "Thrusting — Tulgi. Straight Fingertip — Sun Sonkut; Upset Fingertip — Dwijibun Sonkut; Flat Fingertip — Opun Sonkut; Angle Fingertip — Homi Sonkut; Forefinger — Han Songarak; Double Finger — Doo Songarak; Back Elbow — Dwit Palkup; Side Elbow — Yop Palkup; Straight Elbow — Sun Palkup; Horizontal Elbow — Soopyong Palkup.",
+      "Foot Parts — Habansin: Foot Bal; Toes Balkut; Ball of the foot Apkumchi; Back Sole Dwitkumchi; Side Sole Yop Bal Badak; Foot Sword Balkal; Reverse Foot Sword Balkal Dung; Back Heel Dwitchook; Instep Baldung; Side Instep Yop Baldung; Knee Moorup.",
+      "Hand Parts — Sang Bansin: Hand Son; Palm Sonbadak; Finger Belly Songarak Badak; Fingertip Sonkut; Thumb Umji Songarak; Forefinger Han Songarak; Double Finger Doo Songarak; Angle Fingertip Homi Sonkut; Knife Hand Sonkal; Reverse Knife Hand Sonkal Dung; Arc Hand Bandal Son; Backhand Sondung; Bow Wrist Sonmok Dung; Fore Fist Ap Joomuk; Back Fist Dung Joomuk; Fore Knuckle Fist Inji Joomuk; Middle Knuckle Fist Joongji Joomuk; Side Fist Yop Joomuk; Under Fist Mit Joomuk; Long Fist Ghin Joomuk; Open Fist Pyon Joomuk.",
+      "Hand Techniques used for defence — Blocks can be performed: High Nopunde; Middle Kaunde; Low Najunde; Obverse Baro; Reverse Bandae; Front Ap; Side Yop; Outside Bakat; Inside An.",
+      "Type of Blocks — Checking Momchau; Circular Dollimyo; Double Doo; Downward Naeryo; Guarding Daebi; Grasping Butjaba; Hooking Golcho; Horizontal Soopyong; Inward Anuro; Luring Yuin; Nine Shape Gulja; Outward Bakuro; Pressing Noollo; Pushing Miro; Parallel Narani; Rising Chookyo; Scooping Duro; Side-Front Yopap; Twin Sang; U-Shape Digutja; Upward Ollyo; Wedging Hechyo; Waist Hori; W-Shape San.",
+      "T.A.G.B. North Midlands Development Committee — formed by instructors within the North Midlands Area who wish to promote and develop Taekwon-Do in the Area; these revision cards being one example.",
+      "Committee officers: Mr Brian Towndrow — Chairman, Area Competition Team Manager, Group Leader; Mr Thomas Coleman — Treasurer, Area Competition Deputy Coach; Mr Edward Duffy — Secretary, Group Leader; Mr Antony Littlejohns — Group Leader; Mr Ralph Minott — Area Competition Coach, Group Leader; Mr Leslle Wright — Group Leader; Mr Todd Wurr — Group Leacer.",
+      "Significant dates: 2333 B.C. First Korean Kingdom founded by Dan-Gun; 57 B.C. Beginning of Silla Dynasty; 37 B.C. Beginning of Koguryo dynasty; 18 B.C. Beginning of Baek-Je dynasty; 600 A.D. (Approx) Hwa-Rang formed; 668 A.D. Three Kingdoms of Korea unified by Silla dynasty; 686 A.D. Buddhism introduced to Korea (by Won-Hyo); 936 A.D. End of Silla dynasty & beginning of Koryo dynasty; 1392 Beginning of Yi dynasty; 1443 Yi Se-Jong invents Korean alphabet (Han Gul); 1536-1584 Yul-Gok; 1592 Choong-Moo invents Kobukson first armoured battleship; 1876-1938 Do-San; 1905 End of Yi dynasty; 1905-15th November Beginning of Japanese occupation; 1910 An Chung-Gun executed in Lui-Shung prison; 1918-9th November Choi Hong Hi born (Founder of Taekwon-Do); 1919-1st March Declaration of independence led by Son Byong Hi of the 33 patriots; 1933 Choi begins learning Taek-Kyon; 1943 End of Japanese occupation; 1946 Choi begins work on Korean martial art; 1950-1953 Korean war; 1955-11th April Taekwon-Do proclaimed to the world; 1967 Taekwon-Do introduced to the UK; 1983 T.A.G.B Formed; 1988 B.T.C Formed; 1988 & 1992 Taekwon-Do as demonstration sport in Olympics; 1993 T.I. Formed; 2000 Taekwon-Do as full Olympic sport.",
+      "Theory of Power — Reaction Force: Use their force, strike when opponent moves in. Concentration: Direct power to a small point, & tension to a split second. Equilibrium: Use reaction arm for dynamic stability. Keep body in balance. Breath Control: Tense abdomen to breathe out on impact. Mass: Use hip twist and knee spring to increase body weight. Speed: The most essential factor for power, however all the other factors contribute to speed."
+    ],
+    "techniques": [
+      "Knife Hand High Front Strike — Sonkal Nopunde Ap Taerigi",
+      "Flying Side Piercing Kick — Twimyo Yop Char Jirugi",
+      "Reverse Knife Hand High Front Strike — Sonkal Dung Nopunde Ap Taerigi",
+      "Outer Forearm Middle Front Block — Bakat Palmok Kaunde Ap Makgi",
+      "X-Knife Hand Middle Checking Block — Kyocha Sonkal Kaunde Momchau Makgi",
+      "Flying — Twimyo",
+      "Single Stepping — Ilbo Omgyo Didigi",
+      "Double Stepping — Ibo Omgyo Didigi",
+      "Turning — Dolgi",
+      "Step Turn — Omgyo Didimyo Dolgi",
+      "Spot Turn — Gujari Dolgi"
     ]
   }
 ];
